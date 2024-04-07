@@ -1,1 +1,0 @@
-# kurtkoyemlakcisi.github.io
