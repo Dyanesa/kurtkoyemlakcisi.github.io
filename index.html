@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M. Caner Arslan</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="M. Caner Arslan" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="M. Caner Arslan">M. Caner Arslan</h1>
+          <p class="title">Bilgisayar Müh. - Gayrimenkul Dan.</p>          
+          <p class="title"></p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>İletişim</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:mahmutcanerarslan@gmail.com" class="contact-link">mahmutcanerarslan@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Telefon</p>
+
+              <a href="tel:+12133522795" class="contact-link">0538 562 49 28</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Doğum Tarihi</p>
+
+              <time datetime="2004-08-10">10 Ağustos 2004</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Lokasyon</p>
+
+              <address>Istanbul, Türkiye</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <a href="https://kurtkoyemlakcisi.sahibinden.com/">
+            <img src="data:image/png;base64,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" alt="" width="20">
+            </a>
+
+          <li class="social-item">
+            <a href="https://wa.me/+905385624928" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/mcanerarslan/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/mcanerarslan/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          
+
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Hakkımda</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Kariyerim</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Emlak Porföylerim</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Emlak</button>
+          </li> -->
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Iletisim</button>
+          </li> -->
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="hakkımda">
+
+        <header>
+          <h2 class="h2 article-title">Hakkımda</h2>
+        </header>
+
+        <section class="about-text">
+          <!-- <p>
+            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
+            I enjoy turning complex problems into simple, beautiful and intuitive designs.
+          </p> -->
+
+          <p>
+            Ben Mahmut Caner Arslan, 2004 Istanbul doğumluyum. 2023 yılından beri Okan Üniversitesi'nde Bilgisayar Mühendisliği (İngilizce) bölümünde okumaktayım. 
+          </p>
+
+          <p>
+            Boş zamanlarımda Kurtköy Emlakçısı'nda Gayrimenkul Danışmanlığı yapmaktayım.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Ben ne yapıyorum?</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Grafik Tasarım</h4>
+
+                <p class="service-item-text">
+                  Yarı profesyonal grafik tasarımı.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Stajyer Yazılımcı</h4>
+
+                <p class="service-item-text">
+                  HTML, Javascript, Phyton da başlangıç seviyesi kodlar.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Sosyal Medya Yöneticiliği</h4>
+
+                <p class="service-item-text">
+                  Birkaç ufak çaplı sosyal medya hesabı yönetimi.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Emlakçılık</h4>
+
+                <p class="service-item-text">
+                  Kurtköy Emlakçısı'nda Gayrimenkul Danışmanlığı yapmaktayım.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Görüşler</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Kerim Yılmaz</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Caner Bey ile kiralama süreci kusursuz ilerledi. Kendisi tüm konularda bize destek oldu. 
+                    Sonrasında da ev ile ilgili bakım tamir vs konularında ayrıca yardımcı oldu.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Neriman Öztürk</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Dürüst ve iyi niyetli insanlarla tanışmak, ev bulma sürecinde Caner Bey bizi çok mutlu etti.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Sevim Çağlar</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Caner Bey gerçekten ilgili alakalı ve işini düzgün yapan bir insan gayrimenkul işiniz varsa tek adresiniz burası olmalı.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Hüseyin Bulut</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Yatırım yapmak için arsa aramada ve gerekli prosedürlerde bana yardımcı olan Mahmut Bey'e çok teşekkür ederim.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Kerim Yılmaz</h4>
+
+              <time datetime="2021-06-14">19 Aralık 2023</time>
+
+              <div data-modal-text>
+                <p>
+                  Caner Bey ile kiralama süreci kusursuz ilerledi. Kendisi tüm konularda bize destek oldu. 
+                  Sonrasında da ev ile ilgili bakım tamir vs konularında ayrıca yardımcı oldu.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/kurtkoyemlakcisi.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/sahibinden.png" alt="client logo"  height="110">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/kurtkoyemlakcisi.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/kurtkoyemlakcisi.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/kurtkoyemlakcisi.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #Kariyer
+      -->
+
+      <article class="resume" data-page="kariyerim">
+
+        <header>
+          <h2 class="h2 article-title">Kariyerim</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Eğitim</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Okan Üniversitesi - Bilgisayar Mühendisliği (İngilizce)</h4>
+
+              <span>2023 — 2028</span>
+
+              <p class="timeline-text">
+                İngilizce hazırlık eğitimi görmekteyim.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Sorumlu Emlak Danışmanı (Seviye 5)</h4>
+
+              <span>2023 — 2024</span>
+
+              <p class="timeline-text">
+                17UY0333-5 Sorumlu Emlak Danışmanı (Seviye 5) ulusal yeterliliğinde belirtilen şartlara göre gerçekleştirilen teorik ve performansa dayalı sınavlarda başarılı olarak tamamladım.
+                <br>
+                <br>17UY0333-5/A1 İŞG, Çevre ve Kalite
+                <br>17UY0333-5/A2 Pazarlama Stratejisi Geliştirme ve İş Organizasyonu
+                <br>17UY0333-5/A3 Emlak Satış/Kiralama ve Sonrası İşlemleri
+
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Diksiyon Kursu</h4>
+
+              <span>2023 — 2024</span>
+
+              <p class="timeline-text">
+                24/11/2023 - 01/12/2023 tarihleri arasında düzenlenen 
+                40 saatlik Diksiyon programını tamamladım.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Emlak Danışmanlığı Kursu</h4>
+
+              <span>2023 — 2023</span>
+
+              <p class="timeline-text">
+                16/10/2023 - 22/11/2023 tarihleri arasında düzenlenen 
+                120 saatlik Emlak Danışmanlığı programını tamamladım.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Deneyimlerim</h3>
+          </div>
+
+           <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Emlak Danışmanlığı</h4>
+
+              <span>2023 — Günümüz</span>
+
+              <p class="timeline-text">
+                Kurtköy Emlakçısı'nda Gayrimenkul Danışmanlığı
+              </p>
+
+            </li>
+
+            <!-- <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Art director</h4>
+
+              <span>2013 — 2015</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web designer</h4>
+
+              <span>2010 — 2013</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web designer</h4>
+
+              <span>2010 — 2013</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li> -->
+
+          </ol>
+
+        </section>
+
+        <!-- <section class="skill">
+
+          <h3 class="h3 skills-title">Yeteneklerim</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Hizmet Sonlandırma</h5>
+                <data value="95">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Yetenek 2</h5>
+                <data value="1">1%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 1%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Yetenek 3</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Yetenek 4</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #Portföy
+      -->
+
+      <article class="portfolio" data-page="emlak porföylerim">
+            <a href="https://kurtkoyemlakcisi.sahibinden.com/"><img src="data:image/png;base64,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" alt="" width="64">
+            </a>
+        <header>
+          <h3 class="h3 article-title">Gayrimenkul<br>Portföylerim</h3>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Hepsi</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Satılık Daire</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Kiralık Daire</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Satılık Arsa</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Kategori Seç</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>Hepsi</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Satılık Daire</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Kiralık Daire</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Satılık Arsa</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="kiralık daire">
+              <a href="https://sahibinden.com/1158958635">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://i0.shbdn.com/photos/95/86/35/x5_1158958635syh.jpg" alt="kiralıkdaire1" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Pendik Kurtköy Mesken Konutları'nda Kiralık 2+1 DAİRE-Metro 10dk</h3>
+
+                <p class="project-category">Kiralık Daire</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="satılık arsa">
+              <a href="https://sahibinden.com/1110628633">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://i0.shbdn.com/photos/62/86/33/x5_1110628633t39.jpg" alt="satılıkarsa1" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">KÖRFEZ HİMMETLİ KÖYÜNDE 2524M2 -YATIRIMLIK- SATILIK TARLA</h3>
+
+                <p class="project-category">Satılık Arsa</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="satılık arsa">
+              <a href="https://sahibinden.com/1150216951">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://i0.shbdn.com/photos/21/69/51/x5_11502169513rb.jpg" alt="satılıkarsa2" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Sakarya Pamukova Hayrettin'de SATILIK 1620 M² Tarla</h3>
+
+                <p class="project-category">Satılık Arsa</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="satılık arsa">
+              <a href="https://sahibinden.com/1155375931">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://i0.shbdn.com/photos/37/59/31/x5_11553759310ud.jpg" alt="satılıkarsa3" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Kocaeli Körfez Dereköy'de Satılık 1.290 m² Arsa | %30 İmarlı </h3>
+
+                <p class="project-category">Satılık Arsa</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="satılık daire">
+              <a href="https://sahibinden.com/1148315330">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="https://i0.shbdn.com/photos/31/53/30/x5_1148315330sc8.jpg" alt="satılıkdaire1" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Pendik Yenişehir Çampınar Sitesinde SATILIK 3+1 DAİRE</h3>
+
+                <p class="project-category">Satılık Daire</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+        
+        <section class="testimonials">
+          <br><br>
+
+          <h3 class="h3 testimonials-title">Görüşler</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Kerim Yılmaz</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Caner Bey ile kiralama süreci kusursuz ilerledi. Kendisi tüm konularda bize destek oldu. 
+                    Sonrasında da ev ile ilgili bakım tamir vs konularında ayrıca yardımcı oldu.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Neriman Öztürk</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Dürüst ve iyi niyetli insanlarla tanışmak, ev bulma sürecinde Caner Bey bizi çok mutlu etti.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Sevim Çağlar</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Caner Bey gerçekten ilgili alakalı ve işini düzgün yapan bir insan gayrimenkul işiniz varsa tek adresiniz burası olmalı.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Hüseyin Bulut</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Yatırım yapmak için arsa aramada ve gerekli prosedürlerde bana yardımcı olan Mahmut Bey'e çok teşekkür ederim.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+        
+      </article>
+
+
+
+
+
+      <!--
+        - #Emlak
+      -->
+
+      <article class="blog" data-page="emlak">
+
+        <header>
+          <h2 class="h2 article-title">Gayrimenkul <br> Portföylerim</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              
+              <a href="https://sahibinden.com/1158958635"> <!-- #Link -->
+                <figure class="blog-banner-box">
+                  <img src="https://i0.shbdn.com/photos/95/86/35/x5_1158958635syh.jpg" alt="Design conferences in 2022" loading="lazy"><!-- #Foto -->
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Kiralık Daire</p><!-- #Kategori -->
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-04-03">03 Nisan 2024</time><!-- #Tarih -->
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Pendik Kurtköy Mesken Konutları'nda Kiralık 2+1 DAİRE-Metro 10dk</h3><!-- #Başlık -->
+
+                  <p class="blog-text">
+                     Istanbul/Pendik/Kurtköy <!-- #Lokasyon -->
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #İletişim
+      -->
+
+      <article class="contact" data-page="iletisim">
+
+        <header>
+          <h2 class="h2 article-title">İletişim</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">İletişim Formu</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Adınız-Soyadınız" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email Adresiniz" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Mesajınız" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Mesaj Gönder</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
